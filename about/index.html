@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang - Partai Reformasi Indonesia</title>
+    <link rel="shortcut icon" href="../resources/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../script.js"></script>
+</head>
+<body class="font-[Poppins] bg-gray-200">
+
+    <!-- Cookie cuma filler -->
+    <div class="top-0 left-0 w-full bg-orange-600 text-white p-4 text-center text-xs lg:text-base hidden md:block">
+        <p>Situs ini menggunakan cookie. Dengan terus menelusuri situs, Anda setuju untuk menggunakan cookie situs kami.</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white sticky top-0 z-10 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="../" class="pl-4"><img class="h-[8vh]" src="../resources/images/logos/logo.png" alt=""></a>
+            <div class="block lg:hidden">
+                <button id="menu-toggle" class="text-orange-500 focus:outline-none p-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m 4 6 h 16 m -16 6 h 16 m -16 6 h 16" class="transition-all duration-500"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul id="menu" class="hidden lg:flex justify-center space-x-10 relative flex-1 font-semibold">
+                <li class="relative group">
+                    <a href="../" class="nav-page text-gray">Home</a>
+                    <span class="absolute left-0 top-6 h-1 w-0 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+                </li>
+                <li class="relative group">
+                    <a href="" class="nav-page text-orange-500">Tentang</a>
+                    <span class="absolute left-0 top-6 h-1 w-0 bg-orange-500 w-full"></span>
+                </li>
+                <li class="relative group">
+                    <a href="../program/" class="nav-page text-gray">Program</a>
+                    <span class="absolute left-0 top-6 h-1 w-0 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+                </li>
+                <li class="relative group">
+                    <a href="../contact/" class="nav-page text-gray">Hubungi</a>
+                    <span class="absolute left-0 top-6 h-1 w-0 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+                </li>
+                <li class="relative group">
+                    <a href="../join/" class="nav-page text-gray logged-user">Gabung</a>
+                    <span class="absolute left-0 top-6 h-1 w-0 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+                </li>
+            </ul>
+            <div class="hidden lg:block">
+                <a href="../donate/" class="bg-orange-500 text-white px-4 py-2 mr-10 rounded-md hover:bg-orange-600 transition duration-300 font-semibold" target="_blank">sumbang</a>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-orange-500">
+            <ul class="flex flex-col space-y-2 mt-2 font-semibold">
+                <li><a href="../" class="nav-page block px-4 py-2 text-white hover:bg-orange-600 hover:underline">Home</a></li>
+                <li><a href="" class="nav-page px-4 py-2 block text-white bg-orange-600 hover:bg-orange-600 hover:underline">Tentang</a></li>
+                <li><a href="../program/" class="nav-page px-4 py-2 block text-white hover:bg-orange-600 hover:underline">Program Kami</a></li>
+                <li><a href="../contact/" class="nav-page px-4 py-2 block text-white hover:bg-orange-600 hover:underline">Hubungi</a></li>
+                <li><a href="../join/" class="nav-page px-4 py-2 block text-white hover:bg-orange-600 hover:underline logged-user">Gabung</a></li>
+                <li><a href="../donate/" class="px-4 py-2 block text-white hover:bg-orange-600 hover:underline" target="_blank">sumbang</a></li>
+            </ul>
+        </div>
+        <!-- Transition -->
+        <div class="transition-overlay bg-orange-500 fixed top-0 bottom-0 w-[100%] h-[100%]"></div>
+        <!-- Scroll to Top Button -->
+        <button id="scrollToTop" class="w-10 z-10 fixed bottom-4 right-4 bg-orange-400 text-white p-3 rounded-full shadow-lg hover:bg-orange-400 transition duration-300 opacity-0 pointer-events-none">
+            ↑
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-20 h-[40vh] bg-cover bg-center flex items-center justify-center" style="background-image: url(../resources/images/about.jpg);">
+        <div class="container mx-auto text-center">
+            <h1 class="text-6xl lg:text-8xl font-bold text-orange-500 mix-blend-difference">TENTANG PARTAI</h1>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-gray-200">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Partai Reformasi Indonesia</h2>
+            <p class="text-lg text-gray-700 mb-6 text-justify">
+                Partai Reformasi Indonesia (PRI) adalah partai politik yang didirikan untuk membawa perubahan dan reformasi dalam sistem politik dan pemerintahan di Indonesia. Dengan visi untuk menciptakan masyarakat yang adil dan sejahtera, PRI berkomitmen untuk memperjuangkan hak-hak rakyat dan meningkatkan kualitas hidup masyarakat.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-white">
+                <div class="bg-orange-500 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Visi dan Misi</h3>
+                    <p class="mb-4">
+                        Visi PRI adalah menciptakan Indonesia yang demokratis, transparan, dan akuntabel. Misi kami meliputi:
+                    </p>
+                    <ul class="list-disc list-inside">
+                        <li>Meningkatkan partisipasi masyarakat dalam proses politik.</li>
+                        <li>Memperjuangkan kebijakan yang berpihak pada rakyat.</li>
+                        <li>Mendorong transparansi dan akuntabilitas dalam pemerintahan.</li>
+                        <li>Memberdayakan masyarakat melalui pendidikan dan pelatihan.</li>
+                    </ul>
+                </div>
+                <div class="bg-orange-600 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Program Unggulan</h3>
+                    <p class="mb-4">
+                        PRI memiliki beberapa program unggulan yang bertujuan untuk meningkatkan kesejahteraan masyarakat, antara lain:
+                    </p>
+                    <ul class="list-disc list-inside">
+                        <li>Program Kesehatan Gratis untuk Masyarakat Kurang Mampu.</li>
+                        <li>Pendidikan Berkualitas untuk Semua Anak Indonesia.</li>
+                        <li>Program Pemberdayaan Ekonomi Masyarakat.</li>
+                        <li>Reformasi Birokrasi untuk Pelayanan Publik yang Lebih Baik.</li>
+                    </ul><br>
+                    <button class="font-semibold bg-white text-orange-500 px-6 py-3 rounded hover:bg-orange-100 transition duration-300">
+                        <a href="../program/">Selengkapnya</a>
+                    </button>
+                </div>
+            </div>
+            <div class="mt-12">
+                <h3 class="text-2xl font-semibold mb-4">Bergabunglah Bersama Kami</h3>
+                <p class="text-gray-700 mb-4">
+                    Mari bergabung bersama Partai Reformasi Indonesia untuk bersama-sama mewujudkan perubahan yang kita inginkan. Setiap suara Anda sangat berarti untuk masa depan bangsa.
+                </p>
+                <button class="font-semibold bg-orange-500 text-white px-6 py-3 rounded hover:bg-orange-600 transition duration-300">
+                    <a href="../join/">Bergabung Sekarang</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white">
+        <div class="container mx-auto flex flex-col items-center">
+            <div class="flex flex-wrap justify-center mb-4">
+                <div class="w-full lg:w-1/3 p-4">
+                    <a><img id="logoFooter" class="max-w-none h-[15vw] md:h-[10vw] lg:h-[5vw] mb-2" src="../resources/images/logos/logo.png" alt=""></a>
+                    <p class="text-sm text-justify">Partai Reformasi Indonesia berjuang bersama melawan kemiskinan dan ketidakadilan.</p>
+                </div>
+                <div class="w-full lg:w-1/3 p-4">
+                    <h5 class="text-2xl font-bold mb-2">Hubungi Kami</h5>
+                    <p class="text-sm">Alamat: Jl. A. Yani No.200, Dusun II, Pabelan, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57161</p>
+                    <p class="text-sm">Telepon: +62-812-6021-8742</p>
+                    <p class="text-sm">Email: <a href="mailto:info@pri.org.id" class="text-gray-500 hover:text-orange-500">info@pri.org.id</a></p>
+                </div>
+                <div class="w-full lg:w-1/5 p-4">
+                    <h5 class="text-2xl font-bold mb-2">Ikuti Kami</h5>
+                    <div class="flex space-x-4 text-gray-500">
+                        <a href="https://www.facebook.com" target="_blank" class="hover:text-blue-500 text-2xl">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="hover:text-rose-500 text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" class="hover:text-blue-400 text-2xl">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank" class="hover:text-red-500 text-2xl">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tiktok.com" target="_blank" class="hover:text-black text-2xl">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" class="hover:text-blue-600 text-2xl">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy -->
+    <section class="bg-orange-600 text-white p-4">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="mr-4">
+                    <ul class="lg:inline-block">
+                        <li class="lg:inline-block mr-4 mb-2">
+                            <span class="cursor-pointer">Kebijakan Privasi</span>
+                        </li>
+                        <li class="lg:inline-block mr-4 mb-2">
+                            <span class="cursor-pointer">Syarat dan Ketentuan</span>
+                        </li>
+                        <li class="lg:inline-block mr-4 mb-2">
+                            <span class="cursor-pointer">Kesehatan & Keselamatan Kerja</span>
+                        </li>
+                        <li class="lg:inline-block mr-4 mb-2">
+                            <span class="font-bold">Copyright 2024 Partai Reformasi Indonesia. All rights reserved.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100%;
+}
+
+/*peformanya lebih bagus menggunakan animation ketimbang transition*/
+
+.slide-down {
+    animation: slide-down 0.5s;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    animation: slide-up 1s;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
